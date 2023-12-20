@@ -10,7 +10,7 @@ start='2015-01-01'
 end = '2019-12-31'
 
 st.title('Stock Trend Prediction')
-user_input = st.text_input('Enter Stock Ticker', 'AAPL')
+user_input = st.text_input('Enter Stock Ticker (It can be searched from Yahoo Finance)', 'AAPL')
 
 df = yf.download(user_input, start)
 
