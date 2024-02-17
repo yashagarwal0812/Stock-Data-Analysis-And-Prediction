@@ -14,7 +14,7 @@ user_input = st.text_input('Enter Stock Ticker (It can be searched from Yahoo Fi
 
 df = yf.download(user_input, start)
 
-st.subheader('Data from 2015 - 2023')
+st.subheader('Data from 2015 - 2024')
 st.write(df.describe())
 
 st.subheader('Closing Price vs Time Chart')
